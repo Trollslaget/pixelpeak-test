@@ -61,7 +61,8 @@ function CampaignTable() {
 		{ field: "rpv", headerName: "RPV", type: "number", width: 100 },
 		{ field: "ctr", headerName: "CTR", type: "number", width: 100 },
 		{ field: "rpm", headerName: "RPM", type: "number", width: 100 },
-		{ field: "campaign__created_at", headerName: "Created At", width: 250 },
+		{ field: "date", headerName: "Date", width: 250 },
+		{ field: "campaign__created_at", headerName: "Created At", width: 100 },
 	];
 	const handleRowClick = (params) => {
 		const campaignId = params.row.campaign_id;
@@ -101,6 +102,8 @@ function CampaignTable() {
 			})),
 		[data]
 	);
+	console.log(rows);
+	
 	useEffect(() => {
 		if (!startDate || !endDate) return;
 		setLoading(true); // Показываем индикатор загрузки
