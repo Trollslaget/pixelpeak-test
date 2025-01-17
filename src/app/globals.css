@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: local('SanFrancisco'),
+      url('/fonts/SanFrancisco/SF-Pro-Display-Semibold.otf') format('opentype');
+    /* font-weight: bold; */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'San Francisco';
+    /* letter-spacing: 10cap; */
+  }
+
+  .body-wrapper {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .selection-wrapper {
+    margin-bottom: 10px;
+  }
